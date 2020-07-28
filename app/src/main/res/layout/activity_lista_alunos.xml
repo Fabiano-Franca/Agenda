@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/activity_lista_alunos_fab_novo_aluno"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="67dp"
+        android:layout_height="65dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="16dp"
@@ -18,14 +18,15 @@
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/ic_action_novo_aluno"
+        android:visibility="visible"
         app:backgroundTint="#089182"
-        app:fabSize="mini" />
+        app:fabSize="mini"
+        tools:visibility="visible" />
 
     <ListView
         android:id="@+id/activity_lista_de_alunos_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
     </ListView>
 
 </RelativeLayout>
